@@ -9,8 +9,8 @@
   display: block;
   padding: 0 10px;
 }
-.nav > li.active{
-  background: #fff;
+.nav > li.active a{
+  color:red;
 }
 .nav > li > a {
   position: relative;
@@ -39,6 +39,9 @@
 @media (min-width: 768px) {
   .nav > li {
     display: inline-block;
+  }
+  .nav > li.active{
+    background: #fff;
   }
 }
 @media (min-width: 992px) {

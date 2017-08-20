@@ -1,4 +1,13 @@
 /* css nav */
+.shadow-layer{
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  left: 0;
+  background: rgba(67, 87, 121, 0.6);
+  cursor: pointer;
+  z-index: 2;
+}
 .nav {
   padding: 0;
   margin: 0;
@@ -8,6 +17,9 @@
   position: relative;
   display: block;
   padding: 0 10px;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #e0e6ef;
 }
 .nav > li.active a{
   color:red;
@@ -28,20 +40,64 @@
   background: #DEDDDD;
 }
 .header-menu{
+  position: fixed;
+  display: block;
+  width: 80%;
+  height: 100%;
 	background: #EEEDED;
-	margin-top: 1px;
-	border-bottom: 1px solid #e6e1e1;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #e6e1e1;
+  border-bottom: 1px solid #e6e1e1;
+  transition: left 0.2s ease-in-out;
 }
-.header-menu .navbar{
-  height: 42px;
-  line-height: 42px;
+.header-menu.collapse{
+  left: -80%;
 }
+.header-menu.toggle{
+  left: 0;
+  z-index: 3;
+}
+/* Css top header */
+.navbar-toggle {
+  position: relative;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.navbar-toggle .icon-bar{
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background: #888;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
 @media (min-width: 768px) {
+  .header-menu{
+    width: 100%;
+    position: relative;
+  }
+  .header-menu.collapse{
+    left: 0;
+  }
   .nav > li {
     display: inline-block;
+    border: 0;
   }
   .nav > li.active{
     background: #fff;
+  }
+  .header-menu .navbar{
+    height: 42px;
+    line-height: 42px;
   }
 }
 @media (min-width: 992px) {

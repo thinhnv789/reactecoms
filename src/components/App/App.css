@@ -9,7 +9,8 @@ a {
 }
 a:active,
 a:hover,
-button:focus {
+button:focus,
+li:focus {
   outline: 0;
 }
 

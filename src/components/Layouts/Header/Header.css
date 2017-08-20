@@ -69,6 +69,13 @@
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+.navbar-toggle:hover,
+.navbar-toggle:focus,
+.navbar-toggle:visited,
+{
+  background: transparent;
+  background-color: transparent;
+}
 .navbar-toggle .icon-bar{
   display: block;
   width: 22px;

@@ -81,6 +81,9 @@
 }
 
 @media (min-width: 768px) {
+  .navbar-toggle{
+    display: none;
+  }
   .header-menu{
     width: 100%;
     position: relative;

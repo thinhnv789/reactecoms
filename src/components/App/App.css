@@ -12,8 +12,6 @@ a:hover,
 button:focus,
 li:focus {
   outline: 0;
-  background: transparent;
-  background-color: transparent;
 }
 
 /* Style bootstrap container */

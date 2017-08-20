@@ -19,6 +19,7 @@
   padding: 0 10px;
   height: 44px;
   line-height: 44px;
+  background-color: #EEEDED;
   border-bottom: 1px solid #e0e6ef;
 }
 .nav > li.active a{
@@ -64,9 +65,9 @@
   margin-top: 8px;
   margin-left: 5px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: #DEDDDD;
   background-image: none;
-  border: 1px solid #ddd;
+  border: 1px solid #DEDDDD;
   border-radius: 4px;
 }
 .navbar-toggle .icon-bar{

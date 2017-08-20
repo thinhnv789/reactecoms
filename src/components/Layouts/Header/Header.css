@@ -20,6 +20,7 @@
   height: 44px;
   line-height: 44px;
   border-bottom: 1px solid #e0e6ef;
+  -webkit-tap-highlight-color: transparent;
 }
 .nav > li.active a{
   color:red;

@@ -1,4 +1,4 @@
-/* css nav hehe */
+/* css nav */
 .shadow-layer{
   position: fixed;
   min-height: 100%;
@@ -19,7 +19,6 @@
   padding: 0 10px;
   height: 44px;
   line-height: 44px;
-  background-color: #EEEDED;
   border-bottom: 1px solid #e0e6ef;
 }
 .nav > li.active a{
@@ -65,9 +64,9 @@
   margin-top: 8px;
   margin-left: 5px;
   margin-bottom: 8px;
-  background-color: #DEDDDD;
+  background-color: transparent;
   background-image: none;
-  border: 1px solid #DEDDDD;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 .navbar-toggle .icon-bar{
@@ -89,16 +88,17 @@
   .header-menu.collapse{
     left: 0;
   }
+  .header-menu .navbar{
+    height: 42px;
+    line-height: 42px;
+  }
   .nav > li {
+    height: 42px;
     display: inline-block;
     border: 0;
   }
   .nav > li.active{
     background: #fff;
-  }
-  .header-menu .navbar{
-    height: 42px;
-    line-height: 42px;
   }
 }
 @media (min-width: 992px) {
